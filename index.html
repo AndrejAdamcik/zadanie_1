@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
-        
+
         body {
             font-family: 'Outfit', sans-serif;
         }
@@ -21,8 +22,13 @@
         }
 
         @keyframes move {
-            from { transform: translate(0, 0) scale(1); }
-            to { transform: translate(20px, -20px) scale(1.1); }
+            from {
+                transform: translate(0, 0) scale(1);
+            }
+
+            to {
+                transform: translate(20px, -20px) scale(1.1);
+            }
         }
 
         .glass-card {
@@ -53,13 +59,20 @@
         }
     </script>
 </head>
+
 <body class="bg-slate-50 text-slate-800 overflow-x-hidden relative">
 
     <!-- Background Gradients -->
     <div class="fixed inset-0 overflow-hidden pointer-events-none">
-        <div class="blob bg-purple-300 w-96 h-96 rounded-full top-0 left-0 -translate-x-1/2 -translate-y-1/2 mix-blend-multiply"></div>
-        <div class="blob bg-cyan-300 w-96 h-96 rounded-full bottom-0 right-0 translate-x-1/2 translate-y-1/2 mix-blend-multiply animation-delay-2000"></div>
-        <div class="blob bg-pink-300 w-80 h-80 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mix-blend-multiply animation-delay-4000"></div>
+        <div
+            class="blob bg-purple-300 w-96 h-96 rounded-full top-0 left-0 -translate-x-1/2 -translate-y-1/2 mix-blend-multiply">
+        </div>
+        <div
+            class="blob bg-cyan-300 w-96 h-96 rounded-full bottom-0 right-0 translate-x-1/2 translate-y-1/2 mix-blend-multiply animation-delay-2000">
+        </div>
+        <div
+            class="blob bg-pink-300 w-80 h-80 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mix-blend-multiply animation-delay-4000">
+        </div>
     </div>
 
     <!-- Navigation -->
@@ -73,7 +86,8 @@
                 <a href="#about" class="hover:text-primary transition-colors">O Hre</a>
                 <a href="#features" class="hover:text-primary transition-colors">Vlastnosti</a>
             </div>
-            <button class="bg-slate-900 text-white px-6 py-2 rounded-full font-medium hover:bg-slate-800 transition-transform hover:scale-105 shadow-lg shadow-slate-900/20">
+            <button
+                class="bg-slate-900 text-white px-6 py-2 rounded-full font-medium hover:bg-slate-800 transition-transform hover:scale-105 shadow-lg shadow-slate-900/20">
                 Hrať Hru
             </button>
         </div>
@@ -85,23 +99,30 @@
             <div class="space-y-8 animate-fade-in-up">
                 <h1 class="text-5xl md:text-7xl font-bold leading-tight">
                     Klasika v <br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">Novom Šate</span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">Novom
+                        Šate</span>
                 </h1>
                 <p class="text-xl text-slate-600 max-w-lg leading-relaxed">
-                    Znovu objavte legendárnu hru Snake v modernom, responzívnom dizajne. Zbierajte body, prekonávajte rekordy a užívajte si plynulú hrateľnosť.
+                    Znovu objavte legendárnu hru Snake v modernom, responzívnom dizajne. Zbierajte body, prekonávajte
+                    rekordy a užívajte si plynulú hrateľnosť.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <button class="px-8 py-4 bg-gradient-to-r from-primary to-indigo-600 text-white rounded-full font-bold text-lg shadow-xl shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all hover:-translate-y-1">
+                    <button
+                        class="px-8 py-4 bg-gradient-to-r from-primary to-indigo-600 text-white rounded-full font-bold text-lg shadow-xl shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all hover:-translate-y-1">
                         Hrať Hru
                     </button>
-                    <button class="px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-full font-bold text-lg hover:bg-slate-50 transition-all hover:-translate-y-1">
+                    <button
+                        class="px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-full font-bold text-lg hover:bg-slate-50 transition-all hover:-translate-y-1">
                         Viac Info
                     </button>
                 </div>
             </div>
             <div class="relative hidden md:block">
-                <div class="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full blur-3xl opacity-20 animate-pulse"></div>
-                <img src="https://placehold.co/600x600/f8fafc/4F46E5?text=Snake+Preview" alt="Snake Game Preview" class="relative z-10 w-full rounded-3xl shadow-2xl border-4 border-white/50 glass-card animate-float transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                <div
+                    class="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full blur-3xl opacity-20 animate-pulse">
+                </div>
+                <img src="https://placehold.co/600x600/f8fafc/4F46E5?text=Snake+Preview" alt="Snake Game Preview"
+                    class="relative z-10 w-full rounded-3xl shadow-2xl border-4 border-white/50 glass-card animate-float transform rotate-3 hover:rotate-0 transition-transform duration-500">
             </div>
         </div>
     </section>
@@ -113,24 +134,32 @@
                 <h2 class="text-4xl font-bold mb-4">Prečo práve náš Snake?</h2>
                 <p class="text-slate-600 text-lg">Kombinácia nostalgie a moderných technológií</p>
             </div>
-            
+
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
-                <div class="glass-card p-8 rounded-2xl hover:bg-white/80 transition-all duration-300 hover:-translate-y-2 shadow-lg shadow-slate-200/50">
+                <div
+                    class="glass-card p-8 rounded-2xl hover:bg-white/80 transition-all duration-300 hover:-translate-y-2 shadow-lg shadow-slate-200/50">
                     <div class="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center mb-6 text-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Plynulý Výkon</h3>
-                    <p class="text-slate-600">Optimalizovaný kód pre maximálny zážitok bez sekania na akomkoľvek zariadení.</p>
+                    <p class="text-slate-600">Optimalizovaný kód pre maximálny zážitok bez sekania na akomkoľvek
+                        zariadení.</p>
                 </div>
 
                 <!-- Feature 2 -->
-                <div class="glass-card p-8 rounded-2xl hover:bg-white/80 transition-all duration-300 hover:-translate-y-2 shadow-lg shadow-slate-200/50">
-                    <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-6 text-purple-600">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                <div
+                    class="glass-card p-8 rounded-2xl hover:bg-white/80 transition-all duration-300 hover:-translate-y-2 shadow-lg shadow-slate-200/50">
+                    <div
+                        class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-6 text-purple-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Moderný Dizajn</h3>
@@ -138,14 +167,19 @@
                 </div>
 
                 <!-- Feature 3 -->
-                <div class="glass-card p-8 rounded-2xl hover:bg-white/80 transition-all duration-300 hover:-translate-y-2 shadow-lg shadow-slate-200/50">
-                    <div class="w-14 h-14 bg-emerald-100 rounded-xl flex items-center justify-center mb-6 text-emerald-600">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <div
+                    class="glass-card p-8 rounded-2xl hover:bg-white/80 transition-all duration-300 hover:-translate-y-2 shadow-lg shadow-slate-200/50">
+                    <div
+                        class="w-14 h-14 bg-emerald-100 rounded-xl flex items-center justify-center mb-6 text-emerald-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Okamžitá Hra</h3>
-                    <p class="text-slate-600">Žiadne inštalácie ani dlhé načítavanie. Kliknite a hrajte priamo v prehliadači.</p>
+                    <p class="text-slate-600">Žiadne inštalácie ani dlhé načítavanie. Kliknite a hrajte priamo v
+                        prehliadači.</p>
                 </div>
             </div>
         </div>
@@ -156,26 +190,33 @@
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
             <div class="md:w-1/2">
                 <div class="relative">
-                    <div class="absolute -inset-4 bg-gradient-to-r from-purple-400 to-pink-400 rounded-2xl blur-lg opacity-30"></div>
-                    <img src="https://placehold.co/600x400/f1f5f9/475569?text=Gameplay" alt="Gameplay" class="relative rounded-2xl shadow-lg w-full">
+                    <div
+                        class="absolute -inset-4 bg-gradient-to-r from-purple-400 to-pink-400 rounded-2xl blur-lg opacity-30">
+                    </div>
+                    <img src="https://placehold.co/600x400/f1f5f9/475569?text=Gameplay" alt="Gameplay"
+                        class="relative rounded-2xl shadow-lg w-full">
                 </div>
             </div>
             <div class="md:w-1/2 space-y-6">
                 <h2 class="text-4xl font-bold">Jednoduché pravidlá,<br>nekonečná zábava</h2>
                 <p class="text-slate-600 text-lg leading-relaxed">
-                    Ovládajte hada, zbierajte jedlo a sledujte, ako rastie. Ale pozor! Nenarazte do stien ani do vlastného chvosta. Čím dlhší had, tým väčšia výzva.
+                    Ovládajte hada, zbierajte jedlo a sledujte, ako rastie. Ale pozor! Nenarazte do stien ani do
+                    vlastného chvosta. Čím dlhší had, tým väčšia výzva.
                 </p>
                 <ul class="space-y-4">
                     <li class="flex items-center space-x-3 text-slate-700">
-                        <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm font-bold">✓</span>
+                        <span
+                            class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm font-bold">✓</span>
                         <span>Intuitívne ovládanie šípkami</span>
                     </li>
                     <li class="flex items-center space-x-3 text-slate-700">
-                        <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm font-bold">✓</span>
+                        <span
+                            class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm font-bold">✓</span>
                         <span>Lokálne ukladanie najvyššieho skóre</span>
                     </li>
                     <li class="flex items-center space-x-3 text-slate-700">
-                        <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm font-bold">✓</span>
+                        <span
+                            class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm font-bold">✓</span>
                         <span>Responzívne pre mobily aj desktopy</span>
                     </li>
                 </ul>
@@ -188,7 +229,8 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-8 md:mb-0">
-                    <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">SNAKE</span>
+                    <span
+                        class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">SNAKE</span>
                     <p class="text-slate-400 mt-2">Vytvorené s láskou k retro hrám.</p>
                 </div>
                 <div class="flex space-x-6 text-slate-400">
@@ -205,11 +247,11 @@
 
     <script>
         // Simple script to handle button clicks (placeholder)
+        // Simple script to handle button clicks
         document.querySelectorAll('button').forEach(button => {
             button.addEventListener('click', () => {
-                if(button.innerText.includes('Hrať Hru')) {
-                    console.log('Spúšťam hru... (zatiaľ nefunkčné)');
-                    // Tu by bola logika pre spustenie hry alebo scroll na hernú sekciu
+                if (button.innerText.includes('Hrať Hru')) {
+                    window.location.href = 'game.html';
                 }
             });
         });
@@ -225,4 +267,5 @@
         });
     </script>
 </body>
+
 </html>
